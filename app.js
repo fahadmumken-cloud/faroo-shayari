@@ -1,0 +1,11 @@
+const poems=[
+{mood:'Heartbreak',language:'Hinglish',body:`Kabhi hum bhi kisi ki jaan hua karte the,\nAaj usi ke liye anjaan ho gaye…\nMohabbat toh aaj bhi wahi hai,\nBas hum uski zindagi se nikal gaye.`},
+{mood:'Missing You',language:'Hinglish',body:`Tum yaad nahi aate,\nTum toh yaadon mein rehte ho.\nFarq sirf itna hai —\nPehle paas the, ab dil mein ho.`},
+{mood:'Love',language:'Hinglish',body:`Tera naam likhne ki zaroorat nahi,\nMeri har baat mein tu nazar aata hai.\nIshq shor nahi karta,\nBas har khamoshi mein tera zikr lata hai.`},
+{mood:'Alone',language:'English',body:`Some nights are not lonely\nbecause no one is there.\nThey are lonely because\nthe one you want isn't.`},
+{mood:'Memories',language:'Hinglish',body:`Waqt guzar gaya,\nPar kuch lamhe wahin reh gaye.\nHum aage badh toh gaye,\nBas dil ke kuch hisse peeche reh gaye.`},
+{mood:'Moving On',language:'Hinglish',body:`Ab tera intezaar nahi karta,\nBas kabhi kabhi yaad aa jaati hai.\nDil ne jaana seekh liya hai —\nHar mohabbat manzil nahi hoti.`}
+];
+const grid=document.querySelector('#grid'), lang=document.querySelector('#language');let mood='All';
+function render(){grid.innerHTML='';const f=poems.filter(p=>(mood==='All'||p.mood===mood)&&(lang.value==='All languages'||p.language===lang.value));f.forEach(p=>{const c=document.createElement('article');c.className='card';c.innerHTML=`<div><div class="meta">${p.mood} · ${p.language}</div><div class="poem">${p.body}</div></div><div class="actions"><span>FAROO</span><button>Copy</button></div>`;c.querySelector('button').onclick=async e=>{await navigator.clipboard.writeText(p.body);e.target.textContent='Copied ✓';setTimeout(()=>e.target.textContent='Copy',1400)};grid.appendChild(c)});if(!f.length)grid.innerHTML='<p>No shayari in this filter yet.</p>'}
+document.querySelectorAll('.moods button').forEach(b=>b.onclick=()=>{document.querySelector('.moods .active').classList.remove('active');b.classList.add('active');mood=b.dataset.mood;render()});lang.onchange=render;render();
