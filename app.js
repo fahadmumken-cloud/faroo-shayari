@@ -1,4 +1,5 @@
 const poems=[
+{mood:'Deep',language:'Hinglish',body:`Kuch baatein lafzon tak aayi hi nahi,\nKuch ehsaas dil se jaaye hi nahi.\nHum muskura kar aage badhte rahe,\nPar kuch raaste peeche chhute hi nahi.`},
 {mood:'Heartbreak',language:'Hinglish',body:`Kabhi hum bhi kisi ki jaan hua karte the,\nAaj usi ke liye anjaan ho gaye…\nMohabbat toh aaj bhi wahi hai,\nBas hum uski zindagi se nikal gaye.`},
 {mood:'Missing You',language:'Hinglish',body:`Tum yaad nahi aate,\nTum toh yaadon mein rehte ho.\nFarq sirf itna hai —\nPehle paas the, ab dil mein ho.`},
 {mood:'Love',language:'Hinglish',body:`Tera naam likhne ki zaroorat nahi,\nMeri har baat mein tu nazar aata hai.\nIshq shor nahi karta,\nBas har khamoshi mein tera zikr lata hai.`},
