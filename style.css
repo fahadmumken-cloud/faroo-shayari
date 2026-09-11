@@ -31,41 +31,19 @@
   .reader-copy{width:100%;min-height:48px}
   .reader-close{top:14px;right:14px}
 }
+
 /* FAROO 3-language reading system */
 #language{font-weight:600;min-width:150px}
-
-.urdu-mode .poem-preview,
-.rtl-copy .poem-preview,
-.rtl-reader .reader-poem{
-  direction:rtl;
-  text-align:right;
-}
-
+.urdu-mode .poem-preview,.rtl-copy .poem-preview,.rtl-reader .reader-poem{direction:rtl;text-align:right}
 .rtl-copy .actions{direction:rtl}
 .rtl-reader .reader-content{direction:rtl}
 .rtl-reader .reader-bottom{direction:rtl}
-
-.rtl-reader .reader-title{
-  direction:rtl;
-  text-align:right;
-  left:80px;
-  right:48px;
-}
-
-.urdu-mode .poem-preview,
-.rtl-reader .reader-poem{
+.rtl-reader .reader-title{direction:rtl;text-align:right;left:80px;right:48px}
+.urdu-mode .poem-preview,.rtl-reader .reader-poem{
   font-family:"Noto Nastaliq Urdu","Noto Naskh Arabic","Segoe UI",serif;
   line-height:2;
 }
-
 @media(max-width:650px){
-  .rtl-reader .reader-title{
-    left:60px;
-    right:24px;
-  }
-
-  .urdu-mode .poem-preview,
-  .rtl-reader .reader-poem{
-    line-height:2.05;
-  }
+  .rtl-reader .reader-title{left:60px;right:24px}
+  .urdu-mode .poem-preview,.rtl-reader .reader-poem{line-height:2.05}
 }
