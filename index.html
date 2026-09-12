@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
@@ -123,7 +123,14 @@ Mohabbat, judaai, yaadein aur tanhaai — kuch ehsaas alfaazon se aage badh kar 
 
 <article class="song-card">
 
-<div class="song-cover">
+<div
+class="song-cover"
+onclick="openSongCover(this)"
+onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openSongCover(this)}"
+role="button"
+tabindex="0"
+aria-label="Open Khamosh Reh Gaya Dil cover">
+
 <img
 src="https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/khamosh-reh-gaya-dil-cover.jpg"
 alt="Khamosh Reh Gaya Dil">
@@ -174,7 +181,14 @@ aria-label="Play Khamosh Reh Gaya Dil">▶</button>
 
 <article class="song-card">
 
-<div class="song-cover">
+<div
+class="song-cover"
+onclick="openSongCover(this)"
+onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openSongCover(this)}"
+role="button"
+tabindex="0"
+aria-label="Open Tumhare Baad cover">
+
 <img
 src="https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/tumhare-baad-cover.jpg"
 alt="Tumhare Baad">
@@ -225,7 +239,14 @@ aria-label="Play Tumhare Baad">▶</button>
 
 <article class="song-card">
 
-<div class="song-cover">
+<div
+class="song-cover"
+onclick="openSongCover(this)"
+onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openSongCover(this)}"
+role="button"
+tabindex="0"
+aria-label="Open Tu Mera Na Raha cover">
+
 <img
 src="https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/tu-mera-na-raha-cover.jpg"
 alt="Tu Mera Na Raha">
