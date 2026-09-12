@@ -486,3 +486,118 @@ function render(){
 document.querySelectorAll('.moods button').forEach(b=>b.onclick=()=>{const a=document.querySelector('.moods .active');if(a)a.classList.remove('active');b.classList.add('active');mood=b.dataset.mood;render();document.querySelector('#shayari').scrollIntoView({behavior:'smooth'})});
 languageSelect.onchange=()=>{currentLanguage=languageSelect.value;localStorage.setItem('faroo-language',currentLanguage);applyDirection();render()};
 setupLanguageSelector(); render();
+
+/* ==================================================
+   FAROO SONGS PLAYER
+   ================================================== */
+
+function formatFarooTime(seconds){
+  if(!Number.isFinite(seconds)) return "0:00";
+
+  const minutes = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+
+  return `${minutes}:${secs.toString().padStart(2,"0")}`;
+}
+
+function toggleFarooSong(audioId, button){
+  const audio = document.getElementById(audioId);
+
+  if(!audio) return;
+
+  // Pause any other FAROO song that may be playing
+  document.querySelectorAll(".song-card audio").forEach(otherAudio => {
+    if(otherAudio !== audio){
+      otherAudio.pause();
+
+      const otherCard = otherAudio.closest(".song-card");
+      const otherButton = otherCard?.querySelector(".song-play");
+
+      if(otherButton){
+        otherButton.textContent = "▶";
+        otherButton.setAttribute("aria-label","Play song");
+      }
+    }
+  });
+
+  if(audio.paused){
+    audio.play()
+      .then(() => {
+        button.textContent = "❚❚";
+        button.setAttribute("aria-label","Pause Khamosh Reh Gaya Dil");
+      })
+      .catch(error => {
+        console.error("FAROO audio playback failed:",error);
+      });
+  }else{
+    audio.pause();
+    button.textContent = "▶";
+    button.setAttribute("aria-label","Play Khamosh Reh Gaya Dil");
+  }
+}
+
+document.querySelectorAll(".song-card").forEach(card => {
+
+  const audio = card.querySelector("audio");
+  const button = card.querySelector(".song-play");
+  const progress = card.querySelector(".song-progress");
+  const progressBar = card.querySelector(".song-progress-bar");
+  const currentTime = card.querySelector(".song-current");
+  const duration = card.querySelector(".song-duration");
+
+  if(!audio) return;
+
+  audio.addEventListener("loadedmetadata",() => {
+    if(duration){
+      duration.textContent = formatFarooTime(audio.duration);
+    }
+  });
+
+  audio.addEventListener("timeupdate",() => {
+
+    if(currentTime){
+      currentTime.textContent = formatFarooTime(audio.currentTime);
+    }
+
+    if(progressBar && audio.duration){
+      const percentage = (audio.currentTime / audio.duration) * 100;
+      progressBar.style.width = `${percentage}%`;
+    }
+
+  });
+
+  audio.addEventListener("ended",() => {
+
+    audio.currentTime = 0;
+
+    if(button){
+      button.textContent = "▶";
+      button.setAttribute("aria-label","Play Khamosh Reh Gaya Dil");
+    }
+
+    if(progressBar){
+      progressBar.style.width = "0%";
+    }
+
+    if(currentTime){
+      currentTime.textContent = "0:00";
+    }
+
+  });
+
+  if(progress){
+    progress.style.cursor = "pointer";
+
+    progress.addEventListener("click",event => {
+
+      if(!audio.duration) return;
+
+      const rect = progress.getBoundingClientRect();
+      const position = (event.clientX - rect.left) / rect.width;
+
+      audio.currentTime = position * audio.duration;
+
+    });
+  }
+
+});
