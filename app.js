@@ -58,8 +58,8 @@ Jahan bhi ho, tum khush raho.`,
 جہاں بھی ہو، تم خوش رہو۔`
   }
 },
- 
- {
+
+{
  mood:'Deep', image:'faroo-deep.jpg', alt:'A quiet reflective scene for deep thoughts',
  text:{
   Hinglish:`Kuch baatein lafzon tak aayi hi nahi,
@@ -111,6 +111,7 @@ Jo keh na sakein, woh andar zinda rehta hai.`,
 شاید گہرائی کا مطلب یہی ہے،
 جو کہہ نہ سکیں، وہ اندر زندہ رہتا ہے۔`
  }},
+
 {
  mood:'Heartbreak', image:'faroo-heartbreak.jpg', alt:'A cinematic scene of heartbreak and reflection',
  text:{
@@ -163,6 +164,7 @@ Bas hum ek kahani mein saath nahi reh sake.`,
 محبت ہار نہیں گئی تھی،
 بس ہم ایک کہانی میں ساتھ نہیں رہ سکے۔`
  }},
+
 {
  mood:'Missing You', image:'faroo-missing-you.jpg', alt:'A quiet cinematic scene about missing someone',
  text:{
@@ -215,6 +217,7 @@ Kaash ek baar tum phir paas hote.`,
 آج بھی دل چپکے سے کہتا ہے،
 کاش ایک بار تم پھر پاس ہوتے۔`
  }},
+
 {
  mood:'Love', image:'faroo-love.jpg', alt:'A warm cinematic scene about love',
  text:{
@@ -267,6 +270,7 @@ Ek insaan mein poori duniya mil jaati hai.`,
 شاید محبت اسی کو کہتے ہیں،
 ایک انسان میں پوری دنیا مل جاتی ہے۔`
  }},
+
 {
  mood:'Alone', image:'faroo-alone.jpg', alt:'A solitary cinematic scene at night',
  text:{
@@ -319,6 +323,7 @@ Akele hona, kho jaana nahi hota.`,
 یاد اور مرہم کے بیچ سمجھ آتا ہے،
 اکیلے ہونا، کھو جانا نہیں ہوتا۔`
  }},
+
 {
  mood:'Memories', image:'faroo-memories.jpg', alt:'A warm nostalgic scene of memories and writing',
  text:{
@@ -371,6 +376,7 @@ Par humein wapas zaroor le jaati hain.`,
 یادیں وقت کو روک نہیں سکتیں،
 پر ہمیں واپس ضرور لے جاتی ہیں۔`
  }},
+
 {
  mood:'Moving On', image:'faroo-moving-on.jpg', alt:'A hopeful cinematic scene about moving forward',
  text:{
@@ -455,6 +461,7 @@ function openPoem(index){
  const p=poems[index], text=p.text[currentLanguage], l=labels[currentLanguage];
  const overlay=document.createElement('div');
  overlay.className='poem-reader';
+
  overlay.innerHTML=`<article class="poem-reader-page ${currentLanguage==='Urdu'?'rtl-reader':''}">
  <button class="reader-close" type="button" aria-label="Close">×</button>
  <div class="reader-hero"><img class="reader-image" src="${IMAGE_BASE}${p.image}" alt="${p.alt}"><div class="reader-image-shade"></div>
@@ -462,30 +469,89 @@ function openPoem(index){
  <div class="reader-content"><div class="reader-poem">${text}</div>
  <div class="reader-bottom"><span>Words for what the heart can't say.</span><button class="reader-copy" type="button">${l.copy}</button></div></div>
  </article>`;
- document.body.appendChild(overlay); document.body.classList.add('reader-open');
- const close=()=>{overlay.remove();document.body.classList.remove('reader-open')};
+
+ document.body.appendChild(overlay);
+ document.body.classList.add('reader-open');
+
+ const close=()=>{
+   overlay.remove();
+   document.body.classList.remove('reader-open');
+ };
+
  overlay.querySelector('.reader-close').onclick=close;
  overlay.onclick=e=>{if(e.target===overlay)close()};
- const esc=e=>{if(e.key==='Escape'){close();document.removeEventListener('keydown',esc)}};document.addEventListener('keydown',esc);
- overlay.querySelector('.reader-copy').onclick=async e=>{await navigator.clipboard.writeText(text);e.currentTarget.textContent=l.copied;setTimeout(()=>e.currentTarget.textContent=l.copy,1400)};
+
+ const esc=e=>{
+   if(e.key==='Escape'){
+     close();
+     document.removeEventListener('keydown',esc);
+   }
+ };
+
+ document.addEventListener('keydown',esc);
+
+ overlay.querySelector('.reader-copy').onclick=async e=>{
+   await navigator.clipboard.writeText(text);
+   e.currentTarget.textContent=l.copied;
+   setTimeout(()=>e.currentTarget.textContent=l.copy,1400);
+ };
 }
 
 function render(){
  grid.innerHTML='';
  const l=labels[currentLanguage];
- poems.map((p,index)=>({...p,index})).filter(p=>mood==='All'||p.mood===mood).forEach(p=>{
-   const text=p.text[currentLanguage], preview=text.split('\n').slice(0,4).join('\n');
-   const c=document.createElement('article'); c.className='card clickable-card'; c.tabIndex=0; c.setAttribute('role','button');
+
+ poems
+ .map((p,index)=>({...p,index}))
+ .filter(p=>mood==='All'||p.mood===mood)
+ .forEach(p=>{
+   const text=p.text[currentLanguage];
+   const preview=text.split('\n').slice(0,4).join('\n');
+
+   const c=document.createElement('article');
+   c.className='card clickable-card';
+   c.tabIndex=0;
+   c.setAttribute('role','button');
+
    c.innerHTML=`<div class="card-visual"><img src="${IMAGE_BASE}${p.image}" alt="${p.alt}" loading="lazy"></div>
-   <div class="card-copy ${currentLanguage==='Urdu'?'rtl-copy':''}"><div><div class="meta">${p.mood} · ${currentLanguage==='Hindi'?'हिंदी':currentLanguage==='Urdu'?'اردو':'Hinglish'}</div><div class="poem-preview">${preview}\n…</div></div>
+   <div class="card-copy ${currentLanguage==='Urdu'?'rtl-copy':''}"><div><div class="meta">${p.mood} · ${currentLanguage==='Hindi'?'हिंदी':currentLanguage==='Urdu'?'اردو':'Hinglish'}</div><div class="poem-preview">${preview}
+…</div></div>
    <div class="actions"><span>FAROO</span><span class="read-full">${l.read}</span></div></div>`;
-   c.onclick=()=>openPoem(p.index); c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPoem(p.index)}}; grid.appendChild(c);
+
+   c.onclick=()=>openPoem(p.index);
+
+   c.onkeydown=e=>{
+     if(e.key==='Enter'||e.key===' '){
+       e.preventDefault();
+       openPoem(p.index);
+     }
+   };
+
+   grid.appendChild(c);
  });
 }
 
-document.querySelectorAll('.moods button').forEach(b=>b.onclick=()=>{const a=document.querySelector('.moods .active');if(a)a.classList.remove('active');b.classList.add('active');mood=b.dataset.mood;render();document.querySelector('#shayari').scrollIntoView({behavior:'smooth'})});
-languageSelect.onchange=()=>{currentLanguage=languageSelect.value;localStorage.setItem('faroo-language',currentLanguage);applyDirection();render()};
-setupLanguageSelector(); render();
+document.querySelectorAll('.moods button').forEach(b=>b.onclick=()=>{
+ const a=document.querySelector('.moods .active');
+ if(a)a.classList.remove('active');
+
+ b.classList.add('active');
+ mood=b.dataset.mood;
+ render();
+
+ document.querySelector('#shayari').scrollIntoView({behavior:'smooth'});
+});
+
+languageSelect.onchange=()=>{
+ currentLanguage=languageSelect.value;
+ localStorage.setItem('faroo-language',currentLanguage);
+ applyDirection();
+ render();
+};
+
+setupLanguageSelector();
+render();
+
 
 /* ==================================================
    FAROO SONGS PLAYER
@@ -494,110 +560,201 @@ setupLanguageSelector(); render();
 function formatFarooTime(seconds){
   if(!Number.isFinite(seconds)) return "0:00";
 
-  const minutes = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
+  const minutes=Math.floor(seconds/60);
+  const secs=Math.floor(seconds%60);
 
   return `${minutes}:${secs.toString().padStart(2,"0")}`;
 }
 
-function toggleFarooSong(audioId, button){
-  const audio = document.getElementById(audioId);
+function getFarooSongTitle(audio){
+  const card=audio.closest(".song-card");
+  return card?.querySelector(".song-title")?.textContent.trim() || "FAROO song";
+}
 
-  if(!audio) return;
+function toggleFarooSong(audioId,button){
+  const audio=document.getElementById(audioId);
 
-  // Pause any other FAROO song that may be playing
-  document.querySelectorAll(".song-card audio").forEach(otherAudio => {
-    if(otherAudio !== audio){
+  if(!audio)return;
+
+  document.querySelectorAll(".song-card audio").forEach(otherAudio=>{
+    if(otherAudio!==audio){
       otherAudio.pause();
 
-      const otherCard = otherAudio.closest(".song-card");
-      const otherButton = otherCard?.querySelector(".song-play");
+      const otherCard=otherAudio.closest(".song-card");
+      const otherButton=otherCard?.querySelector(".song-play");
 
       if(otherButton){
-        otherButton.textContent = "▶";
-        otherButton.setAttribute("aria-label","Play song");
+        const otherTitle=getFarooSongTitle(otherAudio);
+        otherButton.textContent="▶";
+        otherButton.setAttribute("aria-label",`Play ${otherTitle}`);
       }
     }
   });
 
+  const title=getFarooSongTitle(audio);
+
   if(audio.paused){
     audio.play()
-      .then(() => {
-        button.textContent = "❚❚";
-        button.setAttribute("aria-label","Pause Khamosh Reh Gaya Dil");
+      .then(()=>{
+        button.textContent="❚❚";
+        button.setAttribute("aria-label",`Pause ${title}`);
       })
-      .catch(error => {
+      .catch(error=>{
         console.error("FAROO audio playback failed:",error);
       });
   }else{
     audio.pause();
-    button.textContent = "▶";
-    button.setAttribute("aria-label","Play Khamosh Reh Gaya Dil");
+    button.textContent="▶";
+    button.setAttribute("aria-label",`Play ${title}`);
   }
 }
 
-document.querySelectorAll(".song-card").forEach(card => {
+document.querySelectorAll(".song-card").forEach(card=>{
 
-  const audio = card.querySelector("audio");
-  const button = card.querySelector(".song-play");
-  const progress = card.querySelector(".song-progress");
-  const progressBar = card.querySelector(".song-progress-bar");
-  const currentTime = card.querySelector(".song-current");
-  const duration = card.querySelector(".song-duration");
+  const audio=card.querySelector("audio");
+  const button=card.querySelector(".song-play");
+  const progress=card.querySelector(".song-progress");
+  const progressBar=card.querySelector(".song-progress-bar");
+  const currentTime=card.querySelector(".song-current");
+  const duration=card.querySelector(".song-duration");
 
-  if(!audio) return;
+  if(!audio)return;
 
-  audio.addEventListener("loadedmetadata",() => {
+  const title=getFarooSongTitle(audio);
+
+  if(button){
+    button.setAttribute("aria-label",`Play ${title}`);
+  }
+
+  audio.addEventListener("loadedmetadata",()=>{
     if(duration){
-      duration.textContent = formatFarooTime(audio.duration);
+      duration.textContent=formatFarooTime(audio.duration);
     }
   });
 
-  audio.addEventListener("timeupdate",() => {
+  if(audio.readyState>=1 && duration){
+    duration.textContent=formatFarooTime(audio.duration);
+  }
+
+  audio.addEventListener("timeupdate",()=>{
 
     if(currentTime){
-      currentTime.textContent = formatFarooTime(audio.currentTime);
+      currentTime.textContent=formatFarooTime(audio.currentTime);
     }
 
     if(progressBar && audio.duration){
-      const percentage = (audio.currentTime / audio.duration) * 100;
-      progressBar.style.width = `${percentage}%`;
+      const percentage=(audio.currentTime/audio.duration)*100;
+      progressBar.style.width=`${percentage}%`;
     }
 
   });
 
-  audio.addEventListener("ended",() => {
+  audio.addEventListener("play",()=>{
+    if(button){
+      button.textContent="❚❚";
+      button.setAttribute("aria-label",`Pause ${title}`);
+    }
+  });
 
-    audio.currentTime = 0;
+  audio.addEventListener("pause",()=>{
+    if(button && !audio.ended){
+      button.textContent="▶";
+      button.setAttribute("aria-label",`Play ${title}`);
+    }
+  });
+
+  audio.addEventListener("ended",()=>{
+
+    audio.currentTime=0;
 
     if(button){
-      button.textContent = "▶";
-      button.setAttribute("aria-label","Play Khamosh Reh Gaya Dil");
+      button.textContent="▶";
+      button.setAttribute("aria-label",`Play ${title}`);
     }
 
     if(progressBar){
-      progressBar.style.width = "0%";
+      progressBar.style.width="0%";
     }
 
     if(currentTime){
-      currentTime.textContent = "0:00";
+      currentTime.textContent="0:00";
     }
 
   });
 
   if(progress){
-    progress.style.cursor = "pointer";
+    progress.style.cursor="pointer";
 
-    progress.addEventListener("click",event => {
+    progress.addEventListener("click",event=>{
 
-      if(!audio.duration) return;
+      if(!audio.duration)return;
 
-      const rect = progress.getBoundingClientRect();
-      const position = (event.clientX - rect.left) / rect.width;
+      const rect=progress.getBoundingClientRect();
+      const position=(event.clientX-rect.left)/rect.width;
 
-      audio.currentTime = position * audio.duration;
+      audio.currentTime=Math.max(
+        0,
+        Math.min(audio.duration,position*audio.duration)
+      );
 
     });
   }
 
 });
+
+
+/* ==================================================
+   FAROO FULL-SCREEN SONG COVER VIEWER
+   ================================================== */
+
+function openSongCover(cover){
+  const img=cover.querySelector("img");
+
+  if(!img)return;
+
+  const viewer=document.createElement("div");
+  viewer.className="song-cover-viewer";
+  viewer.setAttribute("role","dialog");
+  viewer.setAttribute("aria-modal","true");
+  viewer.setAttribute("aria-label",img.alt || "FAROO song artwork");
+
+  const closeButton=document.createElement("button");
+  closeButton.className="song-cover-close";
+  closeButton.type="button";
+  closeButton.setAttribute("aria-label","Close artwork");
+  closeButton.textContent="×";
+
+  const largeImage=document.createElement("img");
+  largeImage.src=img.src;
+  largeImage.alt=img.alt;
+
+  viewer.appendChild(closeButton);
+  viewer.appendChild(largeImage);
+
+  document.body.appendChild(viewer);
+  document.body.classList.add("reader-open");
+
+  const closeViewer=()=>{
+    viewer.remove();
+    document.body.classList.remove("reader-open");
+    document.removeEventListener("keydown",handleEscape);
+  };
+
+  const handleEscape=event=>{
+    if(event.key==="Escape"){
+      closeViewer();
+    }
+  };
+
+  closeButton.addEventListener("click",closeViewer);
+
+  viewer.addEventListener("click",event=>{
+    if(event.target===viewer){
+      closeViewer();
+    }
+  });
+
+  document.addEventListener("keydown",handleEscape);
+
+  closeButton.focus();
+}
