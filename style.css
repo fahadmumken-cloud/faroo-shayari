@@ -19,6 +19,7 @@
 .reader-poem{font-family:'Playfair Display';font-size:clamp(24px,3.1vw,34px);line-height:1.75;white-space:pre-line;color:var(--ink)}
 .reader-bottom{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px}
 .reader-copy{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:999px;font-weight:600;cursor:pointer}
+
 @media(max-width:650px){
   .poem-reader{padding:0;background:var(--paper)}
   .poem-reader-page{width:100%;min-height:100%;margin:0;box-shadow:none}
@@ -43,10 +44,12 @@
   font-family:"Noto Nastaliq Urdu","Noto Naskh Arabic","Segoe UI",serif;
   line-height:2;
 }
+
 @media(max-width:650px){
   .rtl-reader .reader-title{left:60px;right:24px}
   .urdu-mode .poem-preview,.rtl-reader .reader-poem{line-height:2.05}
 }
+
 /* ==================================================
    FAROO SONGS — Premium Music Section
    ================================================== */
@@ -180,7 +183,7 @@
   line-height:1.7;
 }
 
-/* Future real song cards */
+/* Real song cards */
 
 .song-card{
   overflow:hidden;
@@ -201,27 +204,35 @@
   position:relative;
   aspect-ratio:1/1;
   overflow:hidden;
-  background:#2b211c;
+  background:#17120f;
+  cursor:pointer;
 }
 
 .song-cover img{
   display:block;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
+  object-position:center;
   transition:transform .6s ease;
 }
 
-.song-card:hover .song-cover img{
-  transform:scale(1.025);
+.song-card:hover .song-cover img,
+.song-cover:hover img{
+  transform:scale(1.015);
 }
 
 .song-cover::after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(to top,rgba(16,12,10,.55),transparent 48%);
+  background:linear-gradient(to top,rgba(16,12,10,.35),transparent 42%);
   pointer-events:none;
+}
+
+.song-cover:focus-visible{
+  outline:3px solid #d7a995;
+  outline-offset:-4px;
 }
 
 .song-info{
@@ -305,6 +316,61 @@
   font-size:10px;
 }
 
+/* ==================================================
+   FAROO FULL-SCREEN SONG COVER VIEWER
+   ================================================== */
+
+.song-cover-viewer{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  padding:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(10,8,7,.94);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  cursor:zoom-out;
+}
+
+.song-cover-viewer img{
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:min(92vw,900px);
+  max-height:90vh;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 30px 90px rgba(0,0,0,.55);
+  cursor:default;
+}
+
+.song-cover-close{
+  position:fixed;
+  top:22px;
+  right:28px;
+  z-index:10001;
+  width:48px;
+  height:48px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.song-cover-close:hover{
+  background:rgba(255,255,255,.18);
+}
+
 /* Tablet */
 
 @media(max-width:900px){
@@ -376,22 +442,21 @@
   .song-title{
     font-size:25px;
   }
-}
-/* FAROO SONG COVER - show complete artwork */
-.song-cover{
-  aspect-ratio:1/1;
-  background:#17120f;
-  cursor:pointer;
-}
 
-.song-cover img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:center;
-  display:block;
-}
+  .song-cover-viewer{
+    padding:16px;
+  }
 
-.song-cover:hover img{
+  .song-cover-viewer img{
+    max-width:100%;
+    max-height:88vh;
+    border-radius:12px;
+  }
+
+  .song-cover-close{
+    top:14px;
+    right:14px;
+  }
+}
   transform:scale(1.015);
 }
