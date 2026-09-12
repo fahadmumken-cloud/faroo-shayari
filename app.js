@@ -2,6 +2,64 @@ const IMAGE_BASE='https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/pub
 
 const poems=[
 {
+  mood:'Missing You',
+  image:'faroo-missing-you-2026-09-12.jpg',
+  alt:'A woman quietly remembering someone at golden hour',
+  text:{
+    Hinglish:`Kuch log zindagi se chale jaate hain,
+Par dil se kabhi jaa nahi paate.
+Waqt unke bina guzarta rehta hai,
+Par kuch lamhe wahi ruk jaate hain.
+Tumhari yaad ab shor nahi karti,
+Bas khamoshi mein mere paas baith jaati hai.
+Kabhi kisi gaane mein tum mil jaate ho,
+Kabhi shaam ki roshni mein nazar aate ho.
+Maine tumhe wapas maangna chhod diya,
+Par tumhe mehsoos karna nahi chhoda.
+Kuch rishton ka anjaam saath nahi hota,
+Phir bhi woh dil ke sabse kareeb rehte hain.
+Hum dono apni raahon par chal diye,
+Par yaadon ne raaste alag nahi kiye.
+Ab bas itni si dua dil mein rehti hai,
+Jahan bhi ho, tum khush raho.`,
+
+    Hindi:`कुछ लोग ज़िंदगी से चले जाते हैं,
+पर दिल से कभी जा नहीं पाते।
+वक़्त उनके बिना गुज़रता रहता है,
+पर कुछ लम्हे वहीं रुक जाते हैं।
+तुम्हारी याद अब शोर नहीं करती,
+बस ख़ामोशी में मेरे पास बैठ जाती है।
+कभी किसी गाने में तुम मिल जाते हो,
+कभी शाम की रोशनी में नज़र आते हो।
+मैंने तुम्हें वापस माँगना छोड़ दिया,
+पर तुम्हें महसूस करना नहीं छोड़ा।
+कुछ रिश्तों का अंजाम साथ नहीं होता,
+फिर भी वो दिल के सबसे क़रीब रहते हैं।
+हम दोनों अपनी राहों पर चल दिए,
+पर यादों ने रास्ते अलग नहीं किए।
+अब बस इतनी सी दुआ दिल में रहती है,
+जहाँ भी हो, तुम ख़ुश रहो।`,
+
+    Urdu:`کچھ لوگ زندگی سے چلے جاتے ہیں،
+پر دل سے کبھی جا نہیں پاتے۔
+وقت ان کے بغیر گزرتا رہتا ہے،
+پر کچھ لمحے وہیں رک جاتے ہیں۔
+تمہاری یاد اب شور نہیں کرتی،
+بس خاموشی میں میرے پاس بیٹھ جاتی ہے۔
+کبھی کسی گانے میں تم مل جاتے ہو،
+کبھی شام کی روشنی میں نظر آتے ہو۔
+میں نے تمہیں واپس مانگنا چھوڑ دیا،
+پر تمہیں محسوس کرنا نہیں چھوڑا۔
+کچھ رشتوں کا انجام ساتھ نہیں ہوتا،
+پھر بھی وہ دل کے سب سے قریب رہتے ہیں۔
+ہم دونوں اپنی راہوں پر چل دیے،
+پر یادوں نے راستے الگ نہیں کیے۔
+اب بس اتنی سی دعا دل میں رہتی ہے،
+جہاں بھی ہو، تم خوش رہو۔`
+  }
+},
+ 
+ {
  mood:'Deep', image:'faroo-deep.jpg', alt:'A quiet reflective scene for deep thoughts',
  text:{
   Hinglish:`Kuch baatein lafzon tak aayi hi nahi,
