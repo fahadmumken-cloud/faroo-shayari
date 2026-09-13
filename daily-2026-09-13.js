@@ -13,21 +13,14 @@ poems.unshift({
 render = function(){
  grid.innerHTML='';
  const l=labels[currentLanguage];
- poems.map((p,index)=>({...p,index}))
- .filter(p=>mood==='All'||p.mood===mood)
- .forEach(p=>{
-   const text=p.text[currentLanguage];
-   const preview=text.split('\n').slice(0,4).join('\n');
+ poems.map((p,index)=>({...p,index})).filter(p=>mood==='All'||p.mood===mood).forEach(p=>{
+   const text=p.text[currentLanguage], preview=text.split('\n').slice(0,4).join('\n');
    const src=/^https?:\/\//.test(p.image)?p.image:IMAGE_BASE+p.image;
    const postDate=p.date||(p.image&&p.image.includes('2026-09-12')?'12 Sep 2026':'11 Sep 2026');
-   const c=document.createElement('article');
-   c.className='card clickable-card';
-   c.tabIndex=0;
-   c.setAttribute('role','button');
+   const c=document.createElement('article'); c.className='card clickable-card'; c.tabIndex=0; c.setAttribute('role','button');
    c.innerHTML=`<div class="card-visual"><img src="${src}" alt="${p.alt}" loading="lazy"></div><div class="card-copy ${currentLanguage==='Urdu'?'rtl-copy':''}"><div><div class="meta">${p.mood} · ${currentLanguage==='Hindi'?'हिंदी':currentLanguage==='Urdu'?'اردو':'Hinglish'} · ${postDate}</div><div class="poem-preview">${preview}\n…</div></div><div class="actions"><span>FAROO</span><span class="read-full">${l.read}</span></div></div>`;
-   c.onclick=()=>openPoem(p.index);
-   c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPoem(p.index);}};
-   grid.appendChild(c);
+   c.onclick=()=>openPoem(p.index); c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPoem(p.index);}}; grid.appendChild(c);
  });
 };
 render();
+const readerFix=document.createElement('script'); readerFix.src='reader-image-fix.js?v=1'; document.body.appendChild(readerFix);
