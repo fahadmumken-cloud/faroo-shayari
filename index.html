@@ -10,8 +10,39 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=4">
 <style>
-#songs-grid .song-card:nth-child(4) .song-cover{aspect-ratio:3/2;background:#17120f;}
-#songs-grid .song-card:nth-child(4) .song-cover img{object-fit:contain;object-position:center center;}
+#songs-grid .song-card:nth-child(4) .song-cover{
+  aspect-ratio:5/7;
+  background-color:#17120f;
+  background-image:url('https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/ab-tum-nahi-ho-cover.png?v=2');
+  background-size:cover;
+  background-position:center;
+}
+#songs-grid .song-card:nth-child(4) .song-cover::before{
+  content:"";
+  position:absolute;
+  inset:-14px;
+  background:inherit;
+  background-size:cover;
+  background-position:center;
+  filter:blur(18px) brightness(.5);
+  transform:scale(1.08);
+  z-index:0;
+}
+#songs-grid .song-card:nth-child(4) .song-cover img{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  transform:none;
+}
+#songs-grid .song-card:nth-child(4):hover .song-cover img{
+  transform:none;
+}
+#songs-grid .song-card:nth-child(4) .song-cover::after{
+  z-index:2;
+}
 </style>
 </head>
 <body>
