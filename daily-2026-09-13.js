@@ -1,7 +1,7 @@
 poems.unshift({
   mood:'Moving On',
   date:'13 Sep 2026',
-  image:'https://raw.githubusercontent.com/fahadmumken-cloud/faroo-shayari/main/b3c6837f-2fee-4a97-8160-a7e16930722c.png',
+image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-moving-on-2026-09-13.jpg?v=2',
   alt:'A solitary man sitting on a railway platform at dusk, watching a train depart under warm station lights',
   text:{
     Hinglish:`Main tumhe bhoola nahi hoon,\nbas tum tak lautna chhod diya hai.\nKuch yaadein ab bhi saath chalti hain,\npar maine unmein rehna chhod diya hai.\nKabhi tum meri har dua ka hissa the,\naaj tum sirf ek khoobsurat yaad ho.\nJo tha, woh meri kahani ka hissa rahega,\nmagar meri manzil nahi.\nDil ne bahut der tak tumhara intezaar kiya,\nphir ek din khud ka haath thaam liya.\nAb peeche mudkar dard nahi ginta,\nbas seekhe hue sabak yaad rakhta hoon.\nAaj pehli baar dil ne samjha -\naage badhna bewafai nahi hoti,\nkabhi kabhi khud se wafaa hoti hai.`,
