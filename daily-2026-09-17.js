@@ -1,8 +1,8 @@
 poems.unshift({
   mood:'Missing You',
   date:'17 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-love.jpg?v=1',
-  alt:'A quiet cinematic moment of distance, memories and someone still living in the heart',
+  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-2026-09-17-new.png?v=1',
+  alt:'A new cinematic FAROO scene reflecting distance, memories and someone still living in the heart',
   text:{
     Hinglish:`Kabhi kabhi koi door hokar bhi paas rehta hai,
 har khamoshi mein uska ehsaas rehta hai.
