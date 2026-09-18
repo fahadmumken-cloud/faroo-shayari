@@ -1,8 +1,9 @@
-(function(){
-  const item={
-    date:"18 Sep 2026",
-    mood:"Missing You",
-    image:"https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-2026-09-18.png?v=1",
+poems.unshift({
+  mood:'Missing You',
+  date:'18 Sep 2026',
+  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-2026-09-18.png?v=2',
+  alt:'A cinematic FAROO scene about memories returning like rain and someone remaining close to the heart',
+  text:{
     Hinglish:`Kuch yaadein baarish ki tarah hoti hain,
 bina bulaye dil tak aa jaati hain.
 Hum khidki band kar bhi lein,
@@ -48,7 +49,5 @@ dil se kabhi door na ho.`,
 محبت شاید یہی ہوتی ہے،
 کوئی پاس نہ ہو کر بھی
 دل سے کبھی دور نہ ہو۔`
-  };
-  if(Array.isArray(window.shayariData)){window.shayariData.unshift(item);}
-  else {window.addEventListener("DOMContentLoaded",()=>{if(Array.isArray(window.shayariData)){window.shayariData.unshift(item);}});}
-})();
+  }
+});
