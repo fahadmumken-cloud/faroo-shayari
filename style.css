@@ -1233,3 +1233,28 @@ footer{
     right:14px;
   }
 }
+
+
+/* FAROO final responsive corrections — 19 Sep 2026 */
+.song-cover{
+  aspect-ratio:5/7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#17120f;
+}
+.song-cover img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.card-visual img{
+  object-fit:cover;
+}
+@media(max-width:650px){
+  .song-cover{aspect-ratio:5/7;}
+  .song-cover img{object-fit:contain;}
+  .grid{grid-template-columns:1fr;}
+  .card-copy{min-height:0;}
+}
