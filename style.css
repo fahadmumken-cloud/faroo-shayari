@@ -924,7 +924,7 @@ footer{
 .song-cover{
   position:relative;
   width:100%;
-  aspect-ratio:5/7;
+  aspect-ratio:1/1;
   overflow:hidden;
   background:#17120f;
   cursor:zoom-in;
@@ -1195,7 +1195,7 @@ footer{
 
   .song-cover{
     width:100%;
-    aspect-ratio:5/7;
+    aspect-ratio:1/1;
   }
 
   .song-cover img{
