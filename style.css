@@ -924,7 +924,7 @@ footer{
 .song-cover{
   position:relative;
   width:100%;
-  aspect-ratio:1/1;
+  aspect-ratio:5/7;
   overflow:hidden;
   background:#17120f;
   cursor:zoom-in;
@@ -935,7 +935,7 @@ footer{
   display:block;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
   object-position:center center;
   transition:transform .5s ease;
 }
@@ -1195,13 +1195,13 @@ footer{
 
   .song-cover{
     width:100%;
-    aspect-ratio:1/1;
+    aspect-ratio:5/7;
   }
 
   .song-cover img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
     object-position:center;
   }
 
