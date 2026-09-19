@@ -1,4 +1,5 @@
 const IMAGE_BASE='https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/';
+function farooImageSrc(image){ return /^https?:\/\//i.test(image) ? image : IMAGE_BASE+image; }
 
 const poems=[
 {
@@ -464,7 +465,7 @@ function openPoem(index){
 
  overlay.innerHTML=`<article class="poem-reader-page ${currentLanguage==='Urdu'?'rtl-reader':''}">
  <button class="reader-close" type="button" aria-label="Close">×</button>
- <div class="reader-hero"><img class="reader-image" src="${IMAGE_BASE}${p.image}" alt="${p.alt}"><div class="reader-image-shade"></div>
+ <div class="reader-hero"><img class="reader-image" src="${farooImageSrc(p.image)}" alt="${p.alt}"><div class="reader-image-shade"></div>
  <div class="reader-title"><span>FAROO</span><div>${p.mood} · ${currentLanguage==='Hindi'?'हिंदी':currentLanguage==='Urdu'?'اردو':'Hinglish'}</div></div></div>
  <div class="reader-content"><div class="reader-poem">${text}</div>
  <div class="reader-bottom"><span>Words for what the heart can't say.</span><button class="reader-copy" type="button">${l.copy}</button></div></div>
@@ -513,7 +514,7 @@ function render(){
    c.tabIndex=0;
    c.setAttribute('role','button');
 
-   c.innerHTML=`<div class="card-visual"><img src="${IMAGE_BASE}${p.image}" alt="${p.alt}" loading="lazy"></div>
+   c.innerHTML=`<div class="card-visual"><img src="${farooImageSrc(p.image)}" alt="${p.alt}" loading="lazy"></div>
    <div class="card-copy ${currentLanguage==='Urdu'?'rtl-copy':''}"><div><div class="meta">${p.mood} · ${currentLanguage==='Hindi'?'हिंदी':currentLanguage==='Urdu'?'اردو':'Hinglish'}</div><div class="poem-preview">${preview}
 …</div></div>
    <div class="actions"><span>FAROO</span><span class="read-full">${l.read}</span></div></div>`;
