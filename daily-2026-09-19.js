@@ -2,8 +2,8 @@
 poems.unshift({
   mood:'Deep',
   date:'19 Sep 2026',
-  image:'daily-2026-09-19.svg',
-  alt:'A quiet rain-lit window and an empty chair for FAROO daily shayari, 19 September 2026',
+  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/kuch_adhoora_sa_at_sunset.png',
+  alt:'FAROO Kuch Adhoora Sa shayari scene at sunset, 19 September 2026',
   text:{
     Hinglish:`Har khamoshi udaasi nahi hoti,
 kuch chup rehna bhi sukoon hota hai.
