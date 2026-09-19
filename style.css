@@ -1258,3 +1258,6 @@ footer{
   .grid{grid-template-columns:1fr;}
   .card-copy{min-height:0;}
 }
+
+/* Preserve complete FAROO shayari artwork */
+.card-visual img{object-fit:contain!important;object-position:center!important;}
