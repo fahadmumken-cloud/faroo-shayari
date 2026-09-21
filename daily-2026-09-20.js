@@ -52,3 +52,13 @@ Aaj ka din ek nayi kahani likhne de.`,
 آج کا دن ایک نئی کہانی لکھنے دے۔`
   }
 });
+
+// Load the next FAROO daily entry after this file, then refresh the grid.
+(function(){
+  if (document.querySelector('script[data-faroo-daily="2026-09-21"]')) return;
+  const s=document.createElement('script');
+  s.src='daily-2026-09-21.js?v=1';
+  s.dataset.farooDaily='2026-09-21';
+  s.onload=()=>render();
+  document.body.appendChild(s);
+})();
