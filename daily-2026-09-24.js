@@ -52,3 +52,14 @@ Aur kabhi khud ko chunna hi sabse khoobsurat mohabbat hoti hai.`,
 اور کبھی خود کو چننا ہی سب سے خوبصورت محبت ہوتی ہے۔`
   }
 });
+
+
+// Load the next FAROO daily entry after this file, then refresh the grid.
+(function(){
+  if (document.querySelector('script[data-faroo-daily="2026-09-25"]')) return;
+  const s=document.createElement('script');
+  s.src='daily-2026-09-25.js?v=1';
+  s.dataset.farooDaily='2026-09-25';
+  s.onload=()=>render();
+  document.body.appendChild(s);
+})();
