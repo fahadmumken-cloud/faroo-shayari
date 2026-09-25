@@ -1261,3 +1261,16 @@ footer{
 
 /* Preserve complete FAROO shayari artwork */
 .card-visual img{object-fit:contain!important;object-position:center!important;}
+
+
+/* FAROO daily artwork: fit the full cover inside every square card without cropping or stretching. */
+.card-visual{
+  aspect-ratio:1 / 1 !important;
+  background:#151515 !important;
+}
+.card-visual img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
