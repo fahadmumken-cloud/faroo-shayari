@@ -1274,3 +1274,27 @@ footer{
   object-fit:contain !important;
   object-position:center !important;
 }
+
+
+/* FAROO shayari covers — use each image's natural ratio.
+   This removes the forced square frame that caused letterboxing/empty space. */
+#shayari .card-visual{
+  width:100% !important;
+  aspect-ratio:auto !important;
+  height:auto !important;
+  overflow:hidden !important;
+  background:transparent !important;
+  display:block !important;
+}
+#shayari .card-visual img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:initial !important;
+  object-position:initial !important;
+  transform:none !important;
+}
+#shayari .card:hover .card-visual img{
+  transform:none !important;
+}
