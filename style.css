@@ -1298,3 +1298,7 @@ footer{
 #shayari .card:hover .card-visual img{
   transform:none !important;
 }
+
+#shayari .card-visual{width:100%!important;aspect-ratio:auto!important;height:auto!important;background:transparent!important;display:block!important}
+#shayari .card-visual img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:initial!important;transform:none!important}
+#shayari .card:hover .card-visual img{transform:none!important}
