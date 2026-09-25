@@ -53,12 +53,3 @@ aur apni roshni ko kam hone dena nahi.`,
   }
 });
 
-// Load the next FAROO daily entry after this file, then refresh the grid.
-(function(){
-  if (document.querySelector('script[data-faroo-daily="2026-09-22"]')) return;
-  const s=document.createElement('script');
-  s.src='daily-2026-09-22.js?v=1';
-  s.dataset.farooDaily='2026-09-22';
-  s.onload=()=>render();
-  document.body.appendChild(s);
-})();
