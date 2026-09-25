@@ -53,12 +53,3 @@ Aur kuch rishte khatam hokar bhi dil mein rehte hain.`,
   }
 });
 
-// Load the next FAROO daily entry after this file, then refresh the grid.
-(function(){
-  if (document.querySelector('script[data-faroo-daily="2026-09-24"]')) return;
-  const s=document.createElement('script');
-  s.src='daily-2026-09-24.js?v=1';
-  s.dataset.farooDaily='2026-09-24';
-  s.onload=()=>render();
-  document.body.appendChild(s);
-})();
