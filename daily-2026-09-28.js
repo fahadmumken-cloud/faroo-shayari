@@ -2,7 +2,7 @@
 poems.unshift({
   mood:'Missing You',
   date:'28 Sep 2026',
-  image:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=max&fm=jpg&q=86&w=1800',
+  image:'https://images.unsplash.com/photo-1559494007-9f5847c49d94?auto=format&fit=max&fm=jpg&q=86&w=1800',
   alt:'Quiet ocean shore beneath a warm evening sky, representing distance, memory and missing someone for FAROO on 28 September 2026',
   text:{
     Hinglish:`Aaj phir tumhari yaad bina bulaye aa gayi,
