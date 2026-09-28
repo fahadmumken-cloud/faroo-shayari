@@ -2,7 +2,7 @@
 poems.unshift({
   mood:'Memories',
   date:'27 Sep 2026',
-  image:'https://images.unsplash.com/photo-1500534314209-a25ddb2bd4297?auto=format&fit=max&fm=jpg&q=86&w=1800',
+  image:'https://images.unsplash.com/photo-1506664958676-205b41a88d0d?auto=format&fit=max&fm=jpg&q=86&w=1800',
   alt:'Quiet desert road beneath a wide evening sky, representing memories and the paths that remain with us for FAROO on 27 September 2026',
   text:{
     Hinglish:`Kuch raaste peeche reh kar bhi yaad rehte hain,
