@@ -2,8 +2,8 @@
 poems.unshift({
   mood:'Deep',
   date:'03 Oct 2026',
-  image:'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=max&fm=jpg&q=86&w=1800',
-  alt:'A calm mountain lake beneath a wide sky, reflecting renewal and quiet perspective for FAROO on 3 October 2026',
+  image:'https://images.unsplash.com/photo-1576601603172-7a6673f598f3?auto=format&fit=max&fm=jpg&q=86&w=1800',
+  alt:'A quiet foggy forest trail with soft light, reflecting calm perspective and a new beginning for FAROO on 3 October 2026',
   text:{
     Hinglish:`Subah ne aaj kuch naya kaha,
 Roshni ne raasta sa dikha diya.
