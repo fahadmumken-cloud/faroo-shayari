@@ -2,8 +2,8 @@
 poems.unshift({
   mood:'Missing You',
   date:'05 Oct 2026',
-  image:'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=max&fm=jpg&q=86&w=1800',
-  alt:'A distant road crossing a vast quiet landscape, reflecting longing and separation for FAROO on 5 October 2026',
+  image:'https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=max&fm=jpg&q=86&w=1800',
+  alt:'A quiet forest path fading into soft mist, reflecting longing and absence for FAROO on 5 October 2026',
   text:{
     Hinglish:`Aaj bhi kuch kami si hai,
 Jaise shaam mein roshni kam si hai.
