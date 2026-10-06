@@ -2,8 +2,8 @@
 poems.unshift({
   mood:'Moving On',
   date:'06 Oct 2026',
-  image:'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=max&fm=jpg&q=86&w=1800',
-  alt:'An open road beneath a wide sky, symbolizing release and moving forward for FAROO on 6 October 2026',
+  image:'https://images.unsplash.com/photo-djl9exe3uSc?auto=format&fit=max&fm=jpg&q=86&w=1800',
+  alt:'Sunrise over a misty mountain range, symbolizing a fresh beginning and moving forward for FAROO on 6 October 2026',
   text:{
     Hinglish:`Ab tera intezar nahi hai,
 Dil ko woh beqarar nahi hai.
