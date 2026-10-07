@@ -2,7 +2,7 @@
 poems.unshift({
   mood:'Moving On',
   date:'06 Oct 2026',
-  image:'faroo-cover.png',
+  image:'https://raw.githubusercontent.com/fahadmumken-cloud/faroo-shayari/main/faroo-cover.png',
   alt:'FAROO 6 October 2026',
   text:{
     Hinglish:`Ab tera intezar nahi hai,
