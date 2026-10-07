@@ -1,5 +1,5 @@
 const IMAGE_BASE='https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/';
-function farooImageSrc(image){ if(/^https?:\/\//i.test(image)) return image; if(/^\.\/?|^assets\//i.test(image) || /^(?:b3c6837f-2fee-4a97-8160-a7e16930722c\.png|faroo-cover\.png)(?:\?|$)/i.test(image)) return image; return IMAGE_BASE+image; }
+function farooImageSrc(image){ if(/^https?:\/\//i.test(image)) return image; if(/^(?:\.\/)?(?:b3c6837f-2fee-4a97-8160-a7e16930722c\.png|faroo-cover\.png)(?:\?|$)/i.test(image) || /^assets\//i.test(image)) return new URL(image, document.baseURI).href; return IMAGE_BASE+image; }
 
 const poems=[
 {
