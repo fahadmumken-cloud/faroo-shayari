@@ -2,7 +2,7 @@
 poems.unshift({
   mood:'Alone',
   date:'07 Oct 2026',
-  image:'b3c6837f-2fee-4a97-8160-a7e16930722c.png',
+  image:'https://raw.githubusercontent.com/fahadmumken-cloud/faroo-shayari/main/b3c6837f-2fee-4a97-8160-a7e16930722c.png',
   alt:'A quiet FAROO scene for solitude and reflection on 7 October 2026',
   text:{
     Hinglish:`Aaj khamoshi saath baithi hai,
