@@ -42,3 +42,12 @@ Par pyaar dua ban jayega.`,Hindi:`मेज़ पे रखा ख़त अध
 خط کتاب میں سو جائے گا،
 درد دھیرے کھو جائے گا،
 پر پیار دعا بن جائے گا۔`}});
+
+// Ensure the next dated FAROO poem loads without altering this day's poem.
+(function(){
+  if (typeof document === 'undefined') return;
+  const script=document.createElement('script');
+  script.src='daily-2026-10-12.js?v=1';
+  script.onload=function(){ if(typeof render==='function') render(); };
+  document.head.appendChild(script);
+})();
