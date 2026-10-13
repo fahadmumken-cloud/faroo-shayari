@@ -42,3 +42,13 @@ Aur safar ne zindagi di.`,Hindi:`कल तक रास्ते चुप स�
 گاڑی نے جب سیٹی دی،
 دل نے خود کو ہمت دی،
 اور سفر نے زندگی دی۔`}});
+
+// Temporary loader until the index.html dated script list can be updated.
+(function(){
+  if(typeof document==='undefined')return;
+  if(document.querySelector('script[src*="daily-2026-10-13.js"]'))return;
+  const script=document.createElement('script');
+  script.src='daily-2026-10-13.js?v=1';
+  script.onload=function(){if(typeof render==='function')render();};
+  document.head.appendChild(script);
+})();
