@@ -1,1 +1,2 @@
-// FAROO 15 Oct 2026 — publication in progress
+// FAROO 15 Oct 2026
+poems.unshift({mood:'Moving On',date:'15 Oct 2026',image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-10-15-lantern-alley.svg?v=1',alt:'15 October evening alley cover',text:{Hinglish:"Purani gali mein shaam utri\nDeewar par peeli roshni bikhri\nBand darwaaze ke paas khada\nMain apne kal se aaj mila\nHaathon mein kuch khaali panne\nDil mein ab bhi zinda sapne\nTeri yaad ne dastak di\nMaine chup rehkar sun li\nNa gussa tha na sawaal\nBas badla hua tha khayaal\nEk chhota diya jalta raha\nAndhere se kuch kehta raha\nMaine peechhe mudna chhoda\nToote hausle ko phir joda\nSubah ki taraf chal pada",Hindi:"",Urdu:""}});
