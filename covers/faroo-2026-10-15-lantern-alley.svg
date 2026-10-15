@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Original FAROO 15 October 2026 cinematic evening alley with a quiet doorway and one glowing clay lamp">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#182331"/><stop offset=".58" stop-color="#45505a"/><stop offset="1" stop-color="#b58d73"/></linearGradient>
+<linearGradient id="left" x2="1" y2=".3"><stop stop-color="#181e26"/><stop offset="1" stop-color="#56504b"/></linearGradient>
+<linearGradient id="right" x2="0" y2=".3"><stop stop-color="#6b584d"/><stop offset="1" stop-color="#282b31"/></linearGradient>
+<linearGradient id="street" x2=".5" y2="1"><stop stop-color="#5c5350"/><stop offset=".6" stop-color="#2c3036"/><stop offset="1" stop-color="#131e2a"/></linearGradient>
+<radialGradient id="lamp"><stop stop-color="#ffe2a0" stop-opacity=".9"/><stop offset=".35" stop-color="#e9a052" stop-opacity=".4"/><stop offset="1" stop-color="#db7c2e" stop-opacity="0"/></radialGradient>
+<radialGradient id="haze"><stop stop-color="#c6a38b" stop-opacity=".34"/><stop offset="1" stop-color="#b89d8c" stop-opacity="0"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".45" numOctaves="3" seed="1510" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".085"/></feComponentTransfer></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<ellipse cx="635" cy="350" rx="410" ry="310" fill="url(#haze)"/>
+<path d="M0 0H450L540 490L0 800Z" fill="url(#left)"/>
+<path d="M1200 0H770L665 485L1200 800Z" fill="url(#right)"/>
+<path d="M540 470L665 470L1200 800H0Z" fill="url(#street)"/>
+<path d="M438 0L500 460L560 490L460 0M775 0L705 455L654 488L751 0" fill="#151d26" opacity=".38"/>
+<g stroke="#b49c86" stroke-width="3" opacity=".2"><path d="M0 150L470 190M0 350L500 360M0 570L535 510M1200 135L752 185M1200 350L711 365M1200 585L665 510"/></g>
+<g fill="none" stroke="#7f7770" stroke-width="2" opacity=".35"><path d="M570 500L160 800M608 500L520 800M635 500L845 800M685 505L1150 800M0 735Q605 585 1200 735M0 645Q605 545 1200 645M240 585Q610 520 970 585"/></g>
+<path d="M110 200L375 215L410 650L95 715Z" fill="#141a20" stroke="#746052" stroke-width="13"/>
+<path d="M150 255L330 267L348 652L139 678Z" fill="#342b28"/>
+<path d="M245 258L260 664" stroke="#141a20" stroke-width="8"/>
+<circle cx="315" cy="470" r="7" fill="#b99a69"/>
+<path d="M75 705L440 645L475 682L0 785Z" fill="#3b3432"/>
+<path d="M88 694L426 643" stroke="#9d8770" stroke-width="8" opacity=".7"/>
+<g opacity=".45"><rect x="850" y="95" width="175" height="210" fill="#201f24"/><path d="M865 115H1008V289H865Z" fill="#b5a28c" opacity=".17"/><path d="M936 115V290M865 200H1008" stroke="#211d1f" stroke-width="10"/></g>
+<path d="M440 650Q595 605 800 655" stroke="#d7ac83" stroke-width="8" opacity=".12" fill="none"/>
+<ellipse cx="365" cy="628" rx="290" ry="215" fill="url(#lamp)"/>
+<ellipse cx="368" cy="654" rx="100" ry="28" fill="#e7a257" opacity=".25" filter="url(#soft)"/>
+<path d="M341 610Q365 599 390 611L383 630Q364 640 348 628Z" fill="#a6653d"/>
+<ellipse cx="365" cy="610" rx="26" ry="9" fill="#d59a63"/>
+<path d="M365 608Q348 586 366 566Q384 587 365 608Z" fill="#ffcf78"/>
+<path d="M365 599Q360 587 366 579Q374 589 365 599Z" fill="#fff0b4"/>
+<g fill="#bb8361" opacity=".65"><ellipse cx="530" cy="675" rx="5" ry="2" transform="rotate(25 530 675)"/><ellipse cx="645" cy="718" rx="6" ry="2" transform="rotate(-12 645 718)"/><ellipse cx="750" cy="670" rx="4" ry="2"/></g>
+<rect width="1200" height="800" filter="url(#grain)" opacity=".5"/>
+<rect x="10" y="10" width="1180" height="780" fill="none" stroke="#e8d1ba" stroke-opacity=".08" stroke-width="20"/>
+</svg>
