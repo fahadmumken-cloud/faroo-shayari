@@ -1,2 +1,2 @@
 // FAROO 18 Oct 2026.
-poems.unshift({mood:'Heartbreak',date:'18 Oct 2026',image:'',alt:'',text:{Hinglish:'Purane cinema ka aakhri show tha\nHar kursi par andhera soya tha\nJeb mein mere do ticket the\nSaath magar sirf khamosh lamhe the\nParde par koi mil raha tha',Hindi:'',Urdu:''}});
+poems.unshift({mood:'Heartbreak',date:'18 Oct 2026',image:'',alt:'',text:{Hinglish:'Purane cinema ka aakhri show tha\nHar kursi par andhera soya tha\nJeb mein mere do ticket the\nSaath magar sirf khamosh lamhe the\nParde par koi mil raha tha\nDil mein koi bichhad raha tha\nTeri jagah par roshni padi\nKhaali kursi mujhse kuch keh gayi\nTaaliyon mein tera naam suna\nMud kar dekha, koi bhi na mila',Hindi:'',Urdu:''}});
