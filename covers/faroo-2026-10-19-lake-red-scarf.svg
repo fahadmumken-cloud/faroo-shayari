@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="FAROO original 19 October cover: solitary wooden boat at a misty mountain lake, with a crimson scarf on its bow">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#182c45"/><stop offset=".43" stop-color="#51677a"/><stop offset=".79" stop-color="#ba8c83"/><stop offset="1" stop-color="#e3b9a2"/></linearGradient>
+<linearGradient id="lake" x2="0" y2="1"><stop stop-color="#9a9999"/><stop offset=".25" stop-color="#647a80"/><stop offset=".72" stop-color="#3d5a66"/><stop offset="1" stop-color="#172e3b"/></linearGradient>
+<linearGradient id="boat" x2="0" y2="1"><stop stop-color="#7e513e"/><stop offset=".48" stop-color="#392c2b"/><stop offset="1" stop-color="#1a2026"/></linearGradient>
+<linearGradient id="scarf" x2="0" y2="1"><stop stop-color="#d9584f"/><stop offset=".5" stop-color="#a22e36"/><stop offset="1" stop-color="#6e2435"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#ffe0b2" stop-opacity=".86"/><stop offset="1" stop-color="#ffd5b0" stop-opacity="0"/></radialGradient>
+<filter id="mist"><feGaussianBlur stdDeviation="19"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".27" numOctaves="3" seed="19" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".065"/></feComponentTransfer></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<ellipse cx="803" cy="327" rx="248" ry="225" fill="url(#glow)"/>
+<circle cx="805" cy="327" r="54" fill="#f5d2b1" opacity=".79"/>
+<path d="M0 366 116 306 204 334 317 250 444 333 563 287 676 345 803 278 920 349 1052 281 1200 355V483H0Z" fill="#425769" opacity=".75"/>
+<path d="M0 414 157 342 278 378 397 318 539 395 653 335 805 397 969 328 1104 389 1200 365V490H0Z" fill="#314b5b" opacity=".82"/>
+<path d="M0 458Q195 410 371 439T725 437Q956 406 1200 445V800H0Z" fill="url(#lake)"/>
+<path d="M0 449Q160 420 351 438T745 441Q990 414 1200 447" fill="none" stroke="#e4c6b6" stroke-width="12" opacity=".18" filter="url(#mist)"/>
+<ellipse cx="806" cy="485" rx="200" ry="18" fill="#e2bdad" opacity=".15" filter="url(#mist)"/>
+<g stroke="#e4bca7" stroke-linecap="round" opacity=".25">
+<path d="M716 472h184" stroke-width="4"/><path d="M744 485h127" stroke-width="3"/><path d="M684 511h228" stroke-width="2"/><path d="M756 537h112" stroke-width="3"/><path d="M650 566h297" stroke-width="2"/><path d="M712 595h188" stroke-width="2"/>
+</g>
+<g fill="none" stroke="#acc2c4" opacity=".22">
+<path d="M36 530q104-9 202 0m26 29q112 7 203-1m526-21q92-10 169-1M38 612q148-13 282 0m599 22q114-8 229 0M219 687q161-7 319 1m361 14q119-8 252 1"/>
+</g>
+<path d="M0 623Q119 604 214 632T438 698Q222 731 0 800Z" fill="#253943"/>
+<path d="M0 688Q112 655 254 714L352 800H0Z" fill="#192a31"/>
+<path d="M0 647q47-58 81-123M19 644q7-58-12-105m31 77q-13-36-38-55m68 22q32-37 44-78" stroke="#1d3036" stroke-width="12" fill="none" stroke-linecap="round"/>
+<g transform="translate(488 520)">
+<ellipse cx="188" cy="167" rx="265" ry="32" fill="#0d2330" opacity=".45" filter="url(#mist)"/>
+<path d="M-42 99Q150 144 430 95L394 163Q174 201 2 160Z" fill="url(#boat)" stroke="#182530" stroke-width="6"/>
+<path d="M-36 99Q178 127 430 95Q210 79-36 99Z" fill="#a16f50" stroke="#2c2b2b" stroke-width="6"/>
+<path d="M14 104Q182 127 393 104" fill="none" stroke="#d0a178" stroke-width="4" opacity=".63"/>
+<path d="M57 108 66 151M137 118 139 174M229 118 227 180M326 111 317 169" stroke="#261e22" stroke-width="7" opacity=".7"/>
+<path d="M47 108 18 145" stroke="#d8a67b" stroke-width="5"/>
+<path d="M377 101Q416 68 448 83" fill="none" stroke="#3e3432" stroke-width="8"/>
+<path d="M409 91Q431 60 462 67Q479 70 468 91L448 109Q436 130 448 150Q414 138 408 120Q397 108 409 91Z" fill="url(#scarf)"/>
+<path d="M451 104Q466 135 499 151Q525 162 536 194Q492 179 464 171Q441 162 432 139Z" fill="#a3313c"/>
+<path d="M466 130Q494 148 511 174" fill="none" stroke="#ef9183" stroke-width="3" opacity=".52"/>
+<path d="M17 169Q191 209 388 170" fill="none" stroke="#9f9c91" stroke-width="3" opacity=".25"/>
+</g>
+<rect width="1200" height="800" filter="url(#grain)" opacity=".42"/>
+</svg>
