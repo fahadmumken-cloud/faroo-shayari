@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Original FAROO 22 October 2026 cover: handwritten journal, lantern, warm sunset across a mountain lake">
+<title>FAROO 22 October 2026 — Yaadon Ka Safha</title>
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#444761"/><stop offset=".45" stop-color="#e9a077"/><stop offset=".72" stop-color="#ffcc83"/><stop offset="1" stop-color="#6b6c80"/></linearGradient>
+<linearGradient id="water" x2="0" y2="1"><stop stop-color="#df986e"/><stop offset="1" stop-color="#314c61"/></linearGradient>
+<linearGradient id="table" x2="0" y2="1"><stop stop-color="#a66c47"/><stop offset="1" stop-color="#30272a"/></linearGradient>
+<radialGradient id="light"><stop stop-color="#fff2bd"/><stop offset=".45" stop-color="#ffba6b" stop-opacity=".5"/><stop offset="1" stop-color="#ffb567" stop-opacity="0"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<path d="M0 306L155 213 270 291 401 176 553 306 699 207 835 301 985 226 1200 307V449H0Z" fill="#69677c" opacity=".67"/>
+<path d="M0 386L165 323 273 380 444 298 605 389 745 307 882 371 1028 309 1200 379V462H0Z" fill="#3f5365" opacity=".86"/>
+<circle cx="800" cy="361" r="109" fill="url(#light)" filter="url(#blur)"/><circle cx="800" cy="361" r="37" fill="#fff0bd"/>
+<rect y="423" width="1200" height="377" fill="url(#water)"/>
+<path d="M774 430L826 430 890 742 711 742Z" fill="#f9cc8c" opacity=".32"/>
+<g stroke="#ffdc9e" opacity=".33" fill="none" stroke-width="3"><path d="M50 467q170 -11 323 0M621 487q130 -13 277 0M430 547q150 -10 314 0M689 601q175 -14 374 0M170 636q150 -9 290 0"/></g>
+<path d="M0 0H106V635H0Z" fill="#332a2c"/>
+<path d="M64 0Q165 134 315 101T584 77M60 28Q183 51 245 12" stroke="#302d2d" stroke-width="27" fill="none" stroke-linecap="round"/>
+<g fill="#2c413a"><ellipse cx="175" cy="86" rx="105" ry="37"/><ellipse cx="315" cy="82" rx="112" ry="37"/><ellipse cx="450" cy="71" rx="100" ry="33"/></g>
+<g fill="#bc4268"><path d="M211 120q-31 -28 -45 0q10 29 36 18q19 23 37 -5q-4 -19 -28 -13Z"/><path d="M346 96q-27 -29 -44 0q9 29 35 18q21 21 37 -4q-4 -19 -28 -14Z"/><path d="M128 166q-26 -28 -42 0q9 27 33 18q19 20 35 -4q-4 -18 -26 -14Z"/></g>
+<path d="M0 621Q540 584 1200 622V800H0Z" fill="url(#table)"/>
+<g stroke="#c38a5b" stroke-opacity=".3" stroke-width="4" fill="none"><path d="M0 651q550 -28 1200 0M0 723q550 -24 1200 0"/></g>
+<ellipse cx="185" cy="675" rx="98" ry="27" fill="#171a21" opacity=".3"/>
+<path d="M142 456H225L243 632H123Z" fill="#25272c" stroke="#15191c" stroke-width="11"/>
+<path d="M155 472H214L225 611H143Z" fill="#efbd75" opacity=".65"/>
+<ellipse cx="184" cy="551" rx="101" ry="123" fill="url(#light)" opacity=".85"/>
+<path d="M183 596q-22 -29 3 -72q24 36 8 66Z" fill="#fff1a9"/>
+<path d="M143 464L223 619M225 466L142 620" stroke="#2c2c2c" stroke-width="6"/>
+<path d="M150 445Q184 386 217 445M125 638H242" stroke="#202429" stroke-width="11" fill="none"/>
+<path d="M390 658Q514 621 663 678L677 744Q539 700 383 730Z" fill="#f2dcb4" stroke="#a89174" stroke-width="4"/>
+<path d="M675 677Q816 625 958 657L982 730Q820 704 678 744Z" fill="#e8d1a8" stroke="#a89174" stroke-width="4"/>
+<g stroke="#ab9175" stroke-width="2" opacity=".5" fill="none"><path d="M415 678q110 -13 221 29M415 699q115 -9 226 27M708 692q112 -30 237 -13M711 713q112 -24 238 -10"/></g>
+<path d="M703 712l174 36" stroke="#42342d" stroke-width="9" stroke-linecap="round"/>
+<path d="M300 561Q344 549 394 561L387 648Q349 670 310 645Z" fill="#d0b6a0" stroke="#8c796b" stroke-width="5"/>
+<ellipse cx="348" cy="561" rx="49" ry="13" fill="#6c4c3c" stroke="#e7d1b7" stroke-width="7"/>
+<path d="M393 579q52 -8 35 36q-12 19 -37 8" fill="none" stroke="#cdb59d" stroke-width="15"/>
+<path d="M334 538q-18 -25 1 -45M361 538q20 -27 -1 -49" stroke="#e7d7c5" stroke-opacity=".6" stroke-width="6" fill="none"/>
+<g fill="#c3516c"><path d="M1046 694q-25 -25 -41 1q6 25 31 19q21 19 36 -6q-2 -18 -26 -14Z"/><path d="M1100 737q-26 -24 -42 3q8 25 31 17q21 21 36 -5q-2 -18 -25 -15Z"/></g>
+</svg>
