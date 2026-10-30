@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Original FAROO 30 October cover: an empty foggy vintage railway platform at dawn, a cobalt blue suitcase by a wooden bench, departing train and amber lamps">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#101c32"/><stop offset=".36" stop-color="#35435b"/><stop offset=".69" stop-color="#8c8c92"/><stop offset="1" stop-color="#d9ac95"/></linearGradient>
+ <linearGradient id="platform" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#353b4c"/><stop offset=".56" stop-color="#515365"/><stop offset="1" stop-color="#1b2637"/></linearGradient>
+ <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b5aaa0"/><stop offset=".5" stop-color="#3b4251"/><stop offset="1" stop-color="#ddd0ba"/></linearGradient>
+ <linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#244d6a"/><stop offset=".48" stop-color="#183f5b"/><stop offset="1" stop-color="#0b263e"/></linearGradient>
+ <linearGradient id="train" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#536071"/><stop offset=".42" stop-color="#2d3a4b"/><stop offset="1" stop-color="#182335"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#ffe3af" stop-opacity=".76"/><stop offset=".32" stop-color="#ffca8a" stop-opacity=".34"/><stop offset="1" stop-color="#ffca8a" stop-opacity="0"/></radialGradient>
+ <radialGradient id="lamp"><stop stop-color="#fff0b9" stop-opacity=".85"/><stop offset=".25" stop-color="#ffcf80" stop-opacity=".3"/><stop offset="1" stop-color="#ffcf80" stop-opacity="0"/></radialGradient>
+ <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d4c6c0" stop-opacity="0"/><stop offset=".4" stop-color="#d7c9c0" stop-opacity=".24"/><stop offset="1" stop-color="#d5c2b6" stop-opacity=".07"/></linearGradient>
+ <radialGradient id="vignette"><stop offset=".43" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#030713" stop-opacity=".64"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="mist"><feGaussianBlur stdDeviation="32"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".34" numOctaves="3" seed="30" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<ellipse cx="900" cy="384" rx="290" ry="235" fill="url(#sun)"/>
+<path d="M0 376Q125 360 205 367T395 371T605 358T810 366T1010 350T1200 367V560H0Z" fill="#43485b" opacity=".6"/>
+<path d="M0 419Q150 393 298 407T570 400T870 412T1200 394V562H0Z" fill="#777482" opacity=".32" filter="url(#blur)"/>
+<g opacity=".3" stroke="#1a2636" stroke-width="6"><path d="M0 408H1200"/><path d="M0 432H1200"/></g>
+<!-- Departing train receding into the haze -->
+<path d="M652 387L1130 356L1187 373L1187 511L659 474Z" fill="url(#train)" opacity=".86"/>
+<path d="M654 397L1130 366L1167 378L1167 402L654 421Z" fill="#c7b6a0" opacity=".23"/>
+<path d="M682 405L730 402L730 433L682 434Z M746 400L803 395L803 433L746 432Z M823 391L886 386L886 431L823 430Z M907 384L977 379L977 429L907 428Z M997 377L1074 371L1074 425L997 427Z" fill="#d8ad74" opacity=".43"/>
+<path d="M660 453L1186 477" stroke="#bc9980" stroke-width="5" opacity=".3"/>
+<path d="M656 466L1186 503" stroke="#151c2c" stroke-width="10"/>
+<path d="M656 383L656 478" stroke="#b6aa9f" stroke-width="4" opacity=".5"/>
+<ellipse cx="1175" cy="446" rx="80" ry="24" fill="#c3a59d" opacity=".16" filter="url(#blur)"/>
+<!-- Rails with precise converging perspective -->
+<path d="M682 483L0 770L0 800L710 486Z" fill="#1b2535"/>
+<path d="M698 484L0 800" stroke="url(#rail)" stroke-width="12"/>
+<path d="M731 486L220 800" stroke="url(#rail)" stroke-width="9"/>
+<path d="M755 487L504 800" stroke="url(#rail)" stroke-width="6"/>
+<g stroke="#111b2a" stroke-width="11" opacity=".75"><path d="M650 514L815 517"/><path d="M597 539L852 545"/><path d="M534 574L912 584"/><path d="M442 624L997 643"/><path d="M314 696L1116 728"/></g>
+<!-- Platform with a warm yellow safety line -->
+<path d="M0 520L670 475L725 486L0 800Z" fill="url(#platform)"/>
+<path d="M0 679L682 483" stroke="#b99869" stroke-width="9" opacity=".75"/>
+<path d="M0 697L686 486" stroke="#e3b87c" stroke-width="2" opacity=".48"/>
+<g opacity=".28" stroke="#b8b3ac" stroke-width="2"><path d="M0 571L650 480"/><path d="M0 747L690 486"/><path d="M104 519L203 800"/><path d="M250 504L355 800"/><path d="M410 494L519 800"/></g>
+<!-- Canopy receding to a vanishing point -->
+<path d="M0 0H1012L669 380L0 338Z" fill="#121d30"/>
+<path d="M0 35L965 29L673 369L0 304Z" fill="#263248"/>
+<path d="M0 86L915 72L681 364L0 288Z" fill="#141e30" opacity=".88"/>
+<path d="M0 290L679 370" stroke="#8e7d72" stroke-width="8" opacity=".45"/>
+<path d="M140 0L492 342M365 0L575 352M590 0L638 360M802 0L667 368" stroke="#9a8b80" stroke-width="12" opacity=".24"/>
+<!-- Pillars and atmospheric shadows -->
+<path d="M91 292L123 297L123 610L89 626Z" fill="#182438"/>
+<path d="M102 298L109 299L109 620L102 623Z" fill="#738094" opacity=".3"/>
+<path d="M425 342L443 345L443 510L423 514Z" fill="#1d293a"/>
+<path d="M558 358L570 360L570 477L558 480Z" fill="#1d293a"/>
+<path d="M618 370L626 372L626 466L618 467Z" fill="#263145"/>
+<!-- Hanging analog clock -->
+<path d="M340 264V306" stroke="#0e1726" stroke-width="10"/>
+<circle cx="340" cy="325" r="37" fill="#0e1929" stroke="#9a8b7c" stroke-width="5"/>
+<circle cx="340" cy="325" r="30" fill="#c3b7a3"/>
+<g stroke="#253243" stroke-width="3" stroke-linecap="round"><path d="M340 300V305M340 345V350M316 325H321M359 325H364"/><path d="M340 325L340 310M340 325L355 333" stroke-width="4"/></g>
+<circle cx="340" cy="325" r="3" fill="#253243"/>
+<!-- Warm lamps -->
+<g><path d="M202 0V218M504 0V266M642 0V311" stroke="#0c1525" stroke-width="5"/>
+<ellipse cx="202" cy="235" rx="155" ry="128" fill="url(#lamp)"/>
+<ellipse cx="504" cy="277" rx="92" ry="74" fill="url(#lamp)"/>
+<ellipse cx="642" cy="316" rx="46" ry="40" fill="url(#lamp)"/>
+<path d="M177 219L226 219L218 246L184 246Z" fill="#252637"/>
+<path d="M184 227H218L214 241H188Z" fill="#f7d69b"/>
+<path d="M488 269H520L516 287H492Z" fill="#ffdda4"/>
+<path d="M634 311H650L648 322H636Z" fill="#ffdda4"/></g>
+<!-- Old wooden bench, with a suitcase: focal still life -->
+<ellipse cx="260" cy="667" rx="240" ry="32" fill="#0d1728" opacity=".54" filter="url(#blur)"/>
+<g transform="translate(82 450)">
+<path d="M15 78L264 55L267 76L17 100Z" fill="#745748"/>
+<path d="M16 79L263 56" stroke="#d1a77b" stroke-width="5" opacity=".72"/>
+<path d="M35 110L259 89L260 108L38 132Z" fill="#594538"/>
+<path d="M34 110L258 90" stroke="#b38964" stroke-width="4" opacity=".65"/>
+<path d="M52 123L40 227" stroke="#2b2931" stroke-width="15"/>
+<path d="M242 107L261 218" stroke="#282a33" stroke-width="15"/>
+<path d="M14 103L270 81" stroke="#342c2e" stroke-width="10"/>
+<path d="M40 133L263 110" stroke="#382d2d" stroke-width="8"/>
+</g>
+<!-- Blue leather case standing against bench -->
+<g transform="translate(255 515) rotate(-5)">
+<ellipse cx="47" cy="165" rx="78" ry="18" fill="#111827" opacity=".6"/>
+<rect x="-7" y="20" width="112" height="145" rx="13" fill="url(#case)" stroke="#0d2336" stroke-width="5"/>
+<rect x="3" y="29" width="92" height="125" rx="8" fill="none" stroke="#6e8c9a" stroke-opacity=".42" stroke-width="3"/>
+<path d="M23 22V7Q23 -4 35 -4H64Q76 -4 76 7V22" fill="none" stroke="#c7a681" stroke-width="8"/>
+<path d="M9 66H98M9 130H98" stroke="#c6a06e" stroke-width="7" opacity=".82"/>
+<path d="M17 32V154M84 32V154" stroke="#112b43" stroke-width="5" opacity=".6"/>
+<rect x="43" y="79" width="22" height="24" rx="4" fill="#c7a47d" stroke="#665441" stroke-width="2"/>
+<circle cx="11" cy="161" r="5" fill="#171a23"/><circle cx="91" cy="161" r="5" fill="#171a23"/>
+</g>
+<!-- Long fog drifting through vanishing point -->
+<path d="M0 370Q220 333 450 377T850 372T1200 352V595Q980 550 720 564T0 565Z" fill="url(#fog)" filter="url(#mist)"/>
+<ellipse cx="761" cy="452" rx="350" ry="56" fill="#d2b9ac" opacity=".19" filter="url(#mist)"/>
+<path d="M0 741Q130 705 315 729T670 724T1200 709V800H0Z" fill="#ad9294" opacity=".12" filter="url(#mist)"/>
+<rect width="1200" height="800" fill="url(#vignette)"/>
+<rect width="1200" height="800" filter="url(#grain)" opacity=".08"/>
+</svg>
