@@ -1,7 +1,7 @@
 poems.unshift({
   mood:'Love',
   date:'16 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-love.jpg?v=1',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-16-restored-bridge.svg?v=1',
   alt:'A warm cinematic scene reflecting love, distance and someone remaining close in the heart',
   text:{
     Hinglish:`Kuch log khwaab ban kar aate hain,
