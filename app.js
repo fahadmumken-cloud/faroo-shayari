@@ -4,7 +4,7 @@ function farooImageSrc(image){ if(/^https?:\/\//i.test(image)) return image; if(
 const poems=[
 {
   mood:'Missing You',
-  image:'faroo-missing-you-2026-09-12.jpg',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-12-restored-sunset.svg?v=1',
   alt:'A woman quietly remembering someone at golden hour',
   text:{
     Hinglish:`Kuch log zindagi se chale jaate hain,
