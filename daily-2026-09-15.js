@@ -1,7 +1,7 @@
 poems.unshift({
   mood:'Deep',
   date:'15 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-deep-2026-09-15.jpg?v=1',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-15-restored-lake.svg?v=1',
   alt:'A quiet cinematic evening scene reflecting patience, healing and the passage of time',
   text:{
     Hinglish:`Har cheez turant nahi milti,
