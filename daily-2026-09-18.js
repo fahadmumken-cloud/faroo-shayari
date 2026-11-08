@@ -1,7 +1,7 @@
 poems.unshift({
   mood:'Missing You',
   date:'18 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-2026-09-18.png?v=2',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-18-restored-coast.svg?v=1',
   alt:'A cinematic FAROO scene about memories returning like rain and someone remaining close to the heart',
   text:{
     Hinglish:`Kuch yaadein baarish ki tarah hoti hain,
