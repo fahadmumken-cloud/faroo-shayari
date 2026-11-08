@@ -61,7 +61,7 @@ Jahan bhi ho, tum khush raho.`,
 },
 
 {
- mood:'Deep', image:'faroo-deep.jpg?v=2', alt:'A quiet reflective scene for deep thoughts',
+ mood:'Deep', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-deep-backup.svg?v=1', alt:'A quiet reflective scene for deep thoughts',
  text:{
   Hinglish:`Kuch baatein lafzon tak aayi hi nahi,
 Kuch ehsaas dil se jaaye hi nahi.
@@ -114,7 +114,7 @@ Jo keh na sakein, woh andar zinda rehta hai.`,
  }},
 
 {
- mood:'Heartbreak', image:'faroo-heartbreak.jpg?v=2', alt:'A cinematic scene of heartbreak and reflection',
+ mood:'Heartbreak', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-heartbreak-backup.svg?v=1', alt:'A cinematic scene of heartbreak and reflection',
  text:{
   Hinglish:`Kabhi hum bhi kisi ki jaan hua karte the,
 Aaj usi ke liye anjaan ho gaye.
@@ -167,7 +167,7 @@ Bas hum ek kahani mein saath nahi reh sake.`,
  }},
 
 {
- mood:'Missing You', image:'faroo-missing-you.jpg?v=2', alt:'A quiet cinematic scene about missing someone',
+ mood:'Missing You', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-missing-you-backup.svg?v=1', alt:'A quiet cinematic scene about missing someone',
  text:{
   Hinglish:`Tum yaad nahi aate,
 Tum toh yaadon mein rehte ho.
@@ -220,7 +220,7 @@ Kaash ek baar tum phir paas hote.`,
  }},
 
 {
- mood:'Love', image:'faroo-love.jpg?v=2', alt:'A warm cinematic scene about love',
+ mood:'Love', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-love-backup.svg?v=1', alt:'A warm cinematic scene about love',
  text:{
   Hinglish:`Tera naam likhne ki zaroorat nahi,
 Meri har baat mein tu nazar aata hai.
@@ -273,7 +273,7 @@ Ek insaan mein poori duniya mil jaati hai.`,
  }},
 
 {
- mood:'Alone', image:'faroo-alone.jpg?v=2', alt:'A solitary cinematic scene at night',
+ mood:'Alone', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-alone-backup.svg?v=1', alt:'A solitary cinematic scene at night',
  text:{
   Hinglish:`Kuch raatein tanha isliye nahi hoti,
 Ke aas-paas koi nahi hota.
@@ -326,7 +326,7 @@ Akele hona, kho jaana nahi hota.`,
  }},
 
 {
- mood:'Memories', image:'faroo-memories.jpg?v=2', alt:'A warm nostalgic scene of memories and writing',
+ mood:'Memories', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-memories-backup.svg?v=1', alt:'A warm nostalgic scene of memories and writing',
  text:{
   Hinglish:`Waqt guzar gaya,
 Par kuch lamhe wahin reh gaye.
@@ -379,7 +379,7 @@ Par humein wapas zaroor le jaati hain.`,
  }},
 
 {
- mood:'Moving On', image:'faroo-moving-on.jpg?v=2', alt:'A hopeful cinematic scene about moving forward',
+ mood:'Moving On', image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-archive-moving-on-backup.svg?v=1', alt:'A hopeful cinematic scene about moving forward',
  text:{
   Hinglish:`Ab tera intezaar nahi karta,
 Bas kabhi kabhi yaad aa jaati hai.
