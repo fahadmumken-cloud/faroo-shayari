@@ -2,7 +2,7 @@
 poems.unshift({
   mood:'Deep',
   date:'19 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/kuch_adhoora_sa_at_sunset.png',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-19-restored-arch.svg?v=1',
   alt:'FAROO Kuch Adhoora Sa shayari scene at sunset, 19 September 2026',
   text:{
     Hinglish:`Har khamoshi udaasi nahi hoti,
