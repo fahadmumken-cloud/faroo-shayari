@@ -1,7 +1,7 @@
 poems.unshift({
   mood:'Deep',
   date:'14 Sep 2026',
-  image:'https://vmphlzkejnqnvmhygtyv.supabase.co/storage/v1/object/public/faroo-images/faroo-2026-09-14.png?v=1',
+  image:'https://fahadmumken-cloud.github.io/faroo-shayari/covers/faroo-2026-09-14-restored-rooftop.svg?v=1',
   alt:'A solitary man looking toward a sunrise city horizon in a calm cinematic scene',
   text:{
     Hinglish:`Har subah nayi nahi hoti,\nkabhi hum naye ho jaate hain.\nWahi raaste, wahi shehar,\npar kadam badal jaate hain.\nKal tak jo dil par bojh tha,\naaj woh ek sabak sa lagta hai.\nKuch log door chale jaate hain,\npar humein humse mila jaate hain.\nZindagi har jawab nahi deti,\nkuch sawaal waqt ko de deti hai.\nAur waqt dheere dheere,\nhumein khud se milata rehta hai.\nAaj bas itna samjha hoon -\nhar khatam hoti kahani ke baad,\nek naya safar chupchaap shuru hota hai.`,
